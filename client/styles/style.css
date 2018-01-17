@@ -1,0 +1,97 @@
+.menu{
+      background-color: #000 !important;
+}
+
+.ui.grid.row {
+    margin-top: -1%;
+}
+.product{
+   color: black
+}
+.customer{
+  width:20%;
+}
+.graph{
+  background-color: #FFF !important;
+}
+.ui.checkbox label,
+.ui.checkbox+label,
+.ui.checkbox label:hover,
+.ui.checkbox+label:hover,.ui.checkbox label:hover,
+.ui.checkbox+label:hover,.dropdown{
+  color: black;
+  font-size: 16px;
+  /* font-family: open sans-serif */
+}
+.ui.grid>.column:not(.row) {
+    margin-left: 1%;
+}
+.ui.grid .row+.ui.divider{
+    margin-top: -1%;
+}
+/* audio, canvas, progress, video {
+  background-color: white;
+} */
+.ui.segment{
+    padding: 1.25em;
+}
+.table{
+    margin-right: 1.5%;
+}
+.segment{
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.formstyle{
+  border-radius: 5px;
+}
+.pointer{
+  cursor: pointer;
+}
+
+h1:first-child{
+  margin-top: -3%;
+  text-align: center;
+  color: white;
+  font-stretch: condensed;
+  font-weight: 100;
+  font-family: 'Quicksand', sans-serif;
+}
+.h5{
+  margin-top: -7%;
+  font-size: 14px;
+}
+h4{
+  text-align: center;
+  color: white;
+  font-size: 16.5px;
+  font-stretch: condensed;
+  font-weight: 100;
+  font-family: 'Quicksand', sans-serif;
+}
+h3,h2{
+  font-size: 20px;
+}
+.title{
+  font-stretch: condensed;
+  font-weight: 100;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: -19px;
+}
+.title1{
+  font-weight: 100;
+  font-family: 'Quicksand', sans-serif;
+}
+.tablehead{
+font-size: 12px;
+}
+.tableheadcell{
+font-size: 15px;
+font-weight: bold;
+}
+.tablecell{
+  font-size: 13px;
+  font-family: 'Quicksand', sans-serif;
+}
