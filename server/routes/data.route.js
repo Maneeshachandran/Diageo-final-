@@ -1,8 +1,8 @@
 const router =  require('express').Router();
-var Category= require('./categorySale.js');
-var Product= require('./productSaleDetails.js');
-var promocode=require('./promocodeSaleDetails.js');
-var sale=require('./yearSale.js');
+var Category= require('./../Data/categorySale.js');
+var Product= require('./../Data/productSaleDetails.js');
+var promocode=require('./../Data/promocodeSaleDetails.js');
+var sale=require('./../Data/yearSale.js');
 const customerSegment = require('./../Data/customerSegmentationData.js');
 
 

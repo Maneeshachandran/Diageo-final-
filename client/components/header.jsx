@@ -19,7 +19,7 @@ export default class Header extends Component {
         </Menu.Item>
         <Menu.Menu>
         <Menu.Item >
-              <a href="https://www.diageo.com/en/our-brands/"><h4>
+              <a href="https://www.diageo.com/en/our-brands/" target="_blank"><h4>
                 <span className="menuItem">OUR BRANDS</span>
               </h4></a>
         </Menu.Item>

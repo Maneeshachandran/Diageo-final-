@@ -488,7 +488,18 @@ export default class HomePage extends Component {
 
             <Zoom>
             <Segment inverted>
-                <Line className="graph" data={data} height={110} />
+                <Line className="graph"
+                  data={data}
+                   height={110}
+                   options={{
+                      scales: {
+                        yAxes: [{
+                          ticks: {
+                            beginAtZero:true,
+                          }
+                        }]
+                      }
+                    }}/>
            </Segment>
            </Zoom>
 

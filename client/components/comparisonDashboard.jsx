@@ -162,9 +162,9 @@ productChange(e,value){
       })
 
       this.state.selectedValue.map((item)=>{
-        var x=parseFloat(item.household[0].household16.replace("%",""));
+        var x=parseFloat(item.household[0].household16.replace(/\,/g,''));
           household1.push(x);
-        var y=parseFloat(item.household[0].household17.replace("%",""));
+        var y=parseFloat(item.household[0].household17.replace(/\,/g,''));
           household2.push(y);
      })
       this.state.selectedValue.map((item)=>{
@@ -293,12 +293,12 @@ productChange(e,value){
                </Table.Cell>
                <Table.Cell textAlign='center'>
                  {this.state.selectedValue.map((item)=>{
-                    return(<div>{item.household[0].household16.replace(/[^\d\.]/g,'')}</div>);
+                    return(<div>{item.household[0].household16}</div>);
                 })}
                </Table.Cell>
                <Table.Cell textAlign='center'>
                  {this.state.selectedValue.map((item)=>{
-                    return(<div>{item.household[0].household17.replace(/[^\d\.]/g,'')}</div>);
+                    return(<div>{item.household[0].household17}</div>);
                 })}
               </Table.Cell>
               </Table.Row>
@@ -311,7 +311,19 @@ productChange(e,value){
               <h4>Sales</h4>
             <Zoom>
               <Segment inverted>
-                <Bar data={chart1} height={220}/>
+                <Bar
+                  data={chart1}
+                  height={220}
+                  options={{
+                    scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                }
+                  }}
+                />
             </Segment>
            </Zoom>
          </Grid.Column>
@@ -319,7 +331,19 @@ productChange(e,value){
            <h4>Household</h4>
          <Zoom>
            <Segment inverted>
-             <Bar data={chart2} height={220}/>
+             <Bar
+          data={chart2}
+          height={220}
+          options={{
+            scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+          }}
+        />
          </Segment>
         </Zoom>
       </Grid.Column>

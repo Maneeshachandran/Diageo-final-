@@ -11,8 +11,8 @@ exports.yearSale=[{
             'sale17':'€400,075'
           }],
         household:[{
-          'household16':'7%',
-          'household17':'9%'
+          'household16':'799,000',
+          'household17':'910,450'
         }]
 
     },{
@@ -22,8 +22,8 @@ exports.yearSale=[{
             'sale17':'€508,000'
           }],
         household:[{
-          'household16':'8%',
-          'household17':'9%'
+          'household16':'812,524',
+          'household17':'945,888'
         }]
 
     },{
@@ -33,8 +33,8 @@ exports.yearSale=[{
             'sale17':'€550,275'
           }],
         household:[{
-          'household16':'9%',
-          'household17':'10%'
+          'household16':'950,147',
+          'household17':'952,770'
         }]
 
     }
